@@ -16,22 +16,38 @@ public class Produto {
 
 
 
-           //2.Metodo
-          //Mostra informacoes do produto
-    public void mostraInformacoes(){
-        System.out.println("Nome: " +nome);
-        System.out.println("Preco: " +preco);
-        System.out.println("Marca: " +marca);
+//           //2.Metodo
+//          //Mostra informacoes do produto
+//    public void mostraInformacoes(){
+//        System.out.println("Nome: " +nome);
+//        System.out.println("Preco: " +preco);
+//        System.out.println("Marca: " +marca);
+//
+//        //3.Metodo
+//        //Estoque
+//        System.out.println("Quantidade: " + quantidade);
+//        System.out.println("Venda: " + venda);
+//        System.out.println("PosVenda: " + posVenda);
+//
+//    }
+//    public void adcEstoque(int valor){
+//        quantidade = quantidade + valor;
+//    }
 
-        //3.Metodo
-        //Estoque
-        System.out.println("Quantidade: " + quantidade);
-        System.out.println("Venda: " + venda);
-        System.out.println("PosVenda: " + posVenda);
+    //Metodo Construtor
 
+    public Produto(String nome, double tamanho, double preco, String marca){
+        this.nome = nome;
+        this.tamanho = tamanho;
+        this.preco = preco;
+        this.marca = marca;
     }
-    public void adcEstoque(int valor){
-        quantidade = quantidade + valor;
+    //Mostrar informacoes
+    public void mostraInformacoes(){
+        System.out.println("Nome: " + nome);
+        System.out.println("Preco: " + preco);
+        System.out.println("Marca: " + marca);
+        System.out.println("Tamanho: " + tamanho);
     }
 
 
